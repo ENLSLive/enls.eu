@@ -1,0 +1,261 @@
+body {
+    background-color: var(--background-color);
+    margin: 0 auto;
+    /* font family comic sans ms */
+    font-family: 'Roboto', sans-serif;
+    display: block
+}
+
+header {
+    background-color: var(--main-color);
+    height: 170px;
+    /* center align any images in the header */
+    text-align: center;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+contentbox {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* center align the content and its items, with a space between them */
+    justify-content: center;
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-size: 46px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.socials {
+  margin: -15px auto 0px auto;
+    /* center align the socials and its items, with a space between them */
+}
+
+navbar {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /* center align the navbar and its items, with a space between them */
+    padding: 15px;
+    width: 100%;
+    margin: 6px auto 0px auto;
+}
+
+navbar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /* center align the navbar and its items, with a space between them */
+    padding: 0;
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+
+navbar li {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+navbar a {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0;
+    text-decoration: none;
+}
+
+navbar a:hover {
+    color: var(--secondary-color);
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: var(--main-color);
+    width: 120px;
+}
+
+button {
+    font-family: inherit;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+path {
+  fill: white;
+}
+
+button.navbar-toggle {
+  display: none;
+}
+
+.video-container iframe {
+  width: 600px;
+  height: 340px;
+  margin: 0px auto 20px auto;
+  border-radius: 15px;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  height: 40px;
+  background-color: var(--main-color);
+  padding: 0;
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer p {
+  font-family: inherit;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  padding-top: 3px;
+  line-height: 35px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  contentbox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0px auto 0px auto;
+    top: 0px;
+    transition: top 0.4s ease-in-out;
+  }
+
+  navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    margin: 0px auto 0px auto;
+  }
+
+  navbar li {
+    display: grid;
+    padding: 5px;
+    width: 100%;
+  }
+
+  navbar li:hover
+  {
+    background-color: var(--secondary-background-color);
+  }
+
+  navbar a {
+    font-size: 24px;
+    padding: 3px 0;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  header {
+    height: 100px;
+    padding: 0;
+    z-index: 1;
+  }
+
+  header img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  contentbox {
+    padding-top: 150px;
+  }
+
+  .socials {
+    margin: -10px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  button {
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+  
+  .video-container iframe {
+    width: 80%;
+    height: 180px;
+    position: relative;
+  }
+}
+
+/* Global Variables */
+:root {
+  --main-color: #3BAFF7;
+  --secondary-color: #2B8DCD;
+  --background-color: #fdfdfd;
+  --secondary-background-color: #d9d9d9;
+}
