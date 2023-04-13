@@ -222,6 +222,8 @@ footer p {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgb(251, 251, 251)), url("/assets/images/prelooped/background_normal.png") no-repeat fixed;
   padding-bottom: 80px;
   margin-bottom: -150px;
+  background-size: cover;
+  background-position: top;
 }
 
 
@@ -431,6 +433,11 @@ a {
     margin-top: 6px;
     margin-bottom: 6px;
     width: 100%;
+  }
+
+  .prelooped-header {
+    padding-top: 100px;
+    margin-bottom: -250px;
   }
   
   .video-container iframe {
