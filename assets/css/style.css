@@ -81,7 +81,7 @@ navbar {
     text-align: center;
     padding: 15px;
     width: 100%;
-    margin: 0px auto 0px auto;
+    margin: -1px auto 0px auto;
     position: sticky !important;
     top: 0;
     z-index: 1;
