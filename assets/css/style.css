@@ -141,6 +141,16 @@ button {
     cursor: pointer;
 }
 
+.socials button {
+  transform: scale(1.0);
+  transition: linear 0.1s all;
+}
+
+.socials button:hover {
+  transform: scale(1.04);
+  transition: linear 0.1s all;
+}
+
 path {
   fill: white;
 }
@@ -440,6 +450,16 @@ a {
     width: 100%;
   }
 
+  .socials button {
+    transform: scale(1.0);
+    transition: linear 0.1s all;
+  }
+
+  .socials button:hover {
+    transform: scale(1.1);
+    transition: linear 0.1s all;
+  }
+
   .prelooped-header {
     padding-top: 100px;
     margin-bottom: -250px;
@@ -509,6 +529,10 @@ a {
   .list-helpers {
     display: flex;
     flex-direction: column;
+  }
+
+  .prelooped-header {
+    margin-top: -100px;
   }
 }
 
